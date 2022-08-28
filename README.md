@@ -20,19 +20,12 @@ We used Linux (GNU/Linux 3.10.0-1062.18.1.el7.x86_64) and an NVIDIA TITAN X GPU 
 ### Prerequisites
 The main dependent packages for Model MAGIC are as follows:
 - Matlab version R2021B
-
 - Python version 3.6.10
-
 - PyTorch version 1.5.0
-
 - OpenCV version 4.2.0.34
-
 - NumPy version 1.16.0
-
 - Scikit-learn version 0.22.1
-
 - Sewar version 0.4.5
-
 - CUDA version 7.6.5
 
 Please refer the other dependent packages for Model MAGIC [here](magic_env.yml).
