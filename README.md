@@ -39,6 +39,9 @@ The main dependent packages for Model MAGIC are as follows:
 Please refer the other dependent packages for Model MAGIC [here](magic_env.yml).
 
 ## Usage
+### Running Time
+The image-to-map post processing speed is approximately 46ms/ slice, and about 7.43sec per volume of 161 slices once trained.
+
 ### Sample training dataset
 We provide a small sample training set for evaluation and introduction to this project's code. This can be found in [training_data](data/sample/). Contained in this dataset are one subfolders, for training a model. The training set contains 48 samples. The original MAGIC model was trained on over 16,000+ individual samples, but this sample set illustrates the program's functionality.
 
