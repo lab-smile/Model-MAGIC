@@ -1,5 +1,4 @@
-# Model-MAGIC: Multitask, Automated Generation of Intermodal CT Perfusion Maps via Generative Adversarial Networks
-## _Smart Medical Informatics Learning & Evaluation Laboratory, Dept. of Biomedical Engineering, University of Florida_
+# 
 
 MAGIC is a novel, multitask deep network architecture that enables translation from noncontrast-enhanced CT imaging to CT perfusion imaging. This framework enables the contrast-free synthesis of perfusion imaging of the brain, and it is generalizable to other modalities of imaging as well.
 
@@ -76,3 +75,4 @@ The code was modified from https://github.com/mrzhu-cool/pix2pix-pytorch
 ## Contact
 Any discussion, suggestions and questions please contact:
 [Garrett Fullerton](mailto:gfullerton245@gmail.com), [Dr. Ruogu Fang](mailto:ruogu.fang@bme.ufl.edu).
+Smart Medical Informatics Learning & Evaluation Laboratory, Dept. of Biomedical Engineering, University of Florida
