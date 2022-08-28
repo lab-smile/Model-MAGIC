@@ -58,7 +58,7 @@ python pytorch_pix2pix_test.py --dataset '../sample' --save_root 'results'
 ```
 
 The expected results of these four test images are shown below:
-![](https://github.com/lab-smile/Model-MAGIC/blob/main/images/expected_results.png?raw=true)
+![](https://github.com/lab-smile/Model-MAGIC/blob/main/img/expected_results.png)
 
 ## Citation
 
