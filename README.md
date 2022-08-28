@@ -1,4 +1,4 @@
-# 
+# Model MAGIC: Diagnostically competitive performance of a physiology-informed generative adversarial network for contrast-free CT perfusion map generation
 
 MAGIC is a novel, multitask deep network architecture that enables translation from noncontrast-enhanced CT imaging to CT perfusion imaging. This framework enables the contrast-free synthesis of perfusion imaging of the brain, and it is generalizable to other modalities of imaging as well.
 
