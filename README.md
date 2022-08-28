@@ -50,7 +50,7 @@ python pytorch_pix2pix.py --dataset '../sample' --lrG 0.00005 --lrD 0.00005 --tr
 Or you can also training the model by using the [dockerfile](docker/training) we provided. Please find the dockerfile tutorial [here](docker/)
 
 ### Testing 
-We provide four [testing_images](test_img/) and a pre-trained model (Please find our pre-trained model by using this google drive link: https://drive.google.com/file/d/1V-Cc2cBUbp9RL09unxhjfNbgVL9K1h1L/view?usp=sharing) for testing process.
+We provide four [testing_images](test/) and a pre-trained model (Please find our pre-trained model by using this google drive link: https://drive.google.com/file/d/1V-Cc2cBUbp9RL09unxhjfNbgVL9K1h1L/view?usp=sharing) for testing process.
 
 You need to determine the ```dataset``` and ```save_root``` arguments before testing progress. 
 You can directly change the directory in the [testing_script](code/pytorch_pix2pix_test.py) and testing the model by using the following command:
