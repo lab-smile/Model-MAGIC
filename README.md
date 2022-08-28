@@ -1,5 +1,4 @@
-# Model-MAGIC: Multitask, Automated Generation of Intermodal CT Perfusion Maps via Generative Adversarial Networks
-## _Smart Medical Informatics Learning & Evaluation Laboratory, Dept. of Biomedical Engineering, University of Florida_
+# Model MAGIC: Diagnostically competitive performance of a physiology-informed generative adversarial network for contrast-free CT perfusion map generation
 
 MAGIC is a novel, multitask deep network architecture that enables translation from noncontrast-enhanced CT imaging to CT perfusion imaging. This framework enables the contrast-free synthesis of perfusion imaging of the brain, and it is generalizable to other modalities of imaging as well.
 
@@ -21,19 +20,12 @@ We used Linux (GNU/Linux 3.10.0-1062.18.1.el7.x86_64) and an NVIDIA TITAN X GPU 
 ### Prerequisites
 The main dependent packages for Model MAGIC are as follows:
 - Matlab version R2021B
-
 - Python version 3.6.10
-
 - PyTorch version 1.5.0
-
 - OpenCV version 4.2.0.34
-
 - NumPy version 1.16.0
-
 - Scikit-learn version 0.22.1
-
 - Sewar version 0.4.5
-
 - CUDA version 7.6.5
 
 Please refer the other dependent packages for Model MAGIC [here](magic_env.yml).
@@ -66,7 +58,7 @@ python pytorch_pix2pix_test.py --dataset '../sample' --save_root 'results'
 ```
 
 The expected results of these four test images are shown below:
-![](https://github.com/lab-smile/Model-MAGIC/blob/main/images/expected_results.png?raw=true)
+![](https://github.com/lab-smile/Model-MAGIC/blob/main/img/expected_results.png)
 
 ## Citation
 
@@ -76,3 +68,4 @@ The code was modified from https://github.com/mrzhu-cool/pix2pix-pytorch
 ## Contact
 Any discussion, suggestions and questions please contact:
 [Garrett Fullerton](mailto:gfullerton245@gmail.com), [Dr. Ruogu Fang](mailto:ruogu.fang@bme.ufl.edu).
+Smart Medical Informatics Learning & Evaluation Laboratory, Dept. of Biomedical Engineering, University of Florida
