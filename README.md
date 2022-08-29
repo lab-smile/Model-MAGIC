@@ -39,9 +39,9 @@ Please refer the other dependent packages for Model MAGIC [here](magic_env.yml).
 We provide a small sample training set for evaluation and introduction to this project's code. This can be found in [training_data](sample_train/). Contained in this dataset are one subfolders, for training a model. The training set contains 48 samples. The original MAGIC model was trained on over 16,000+ individual samples, but this sample set illustrates the program's functionality.
 
 ### Training network
-Once the environment and training data are ready, you can directly change the directory in the [training_script](code/pytorch_pix2pix.py) and training the model by using the following command:
+Once the environment and training data are ready, you can directly change the directory in the [training_script](code/magic_train.py) and training the model by using the following command:
 ```
-python pytorch_pix2pix.py 
+python magic_train.py 
 ```
 You can specify learning rates, output save direction, number of training epochs, etc. using command line arguments. For example:  
 ```
@@ -53,7 +53,7 @@ Or you can also training the model by using the [dockerfile](docker/training) we
 We provide four [testing_images](test/) and a pre-trained model (Please find our pre-trained model by using this google drive link: https://drive.google.com/file/d/1V-Cc2cBUbp9RL09unxhjfNbgVL9K1h1L/view?usp=sharing) for testing process.
 
 You need to determine the ```dataset``` and ```save_root``` arguments before testing progress. 
-You can directly change the directory in the [testing_script](code/pytorch_pix2pix_test.py) and testing the model by using the following command:
+You can directly change the directory in the [testing_script](code/magic_test.py) and testing the model by using the following command:
 ```
 python magic_test.py --dataset '../sample' --save_root 'results' 
 ```
