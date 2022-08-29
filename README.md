@@ -45,7 +45,7 @@ python pytorch_pix2pix.py
 ```
 You can specify learning rates, output save direction, number of training epochs, etc. using command line arguments. For example:  
 ```
-python pytorch_pix2pix.py --dataset '../sample' --lrG 0.00005 --lrD 0.00005 --train_epoch 50 --save_root 'results' 
+python magic_train.py --dataset '../sample' --lrG 0.00005 --lrD 0.00005 --train_epoch 50 --save_root 'results' 
 ```
 Or you can also training the model by using the [dockerfile](docker/training) we provided. Please find the dockerfile tutorial [here](docker/)
 
@@ -55,7 +55,7 @@ We provide four [testing_images](test/) and a pre-trained model (Please find our
 You need to determine the ```dataset``` and ```save_root``` arguments before testing progress. 
 You can directly change the directory in the [testing_script](code/pytorch_pix2pix_test.py) and testing the model by using the following command:
 ```
-python pytorch_pix2pix_test.py --dataset '../sample' --save_root 'results' 
+python magic_test.py --dataset '../sample' --save_root 'results' 
 ```
 
 The expected results of these four test images are shown below:
