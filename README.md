@@ -36,7 +36,7 @@ Please refer the other dependent packages for Model MAGIC [here](magic_env.yml).
 - The image-to-map prediction speed is approximately 46 ms/ slice, which is about 7.43 sec per volume of 161 slices once trained.
 
 ### Sample training dataset
-We provide a small sample training set for evaluation and introduction to this project's code. This can be found in [training_data](sample_train/). Contained in this dataset are one subfolders, for training a model. The training set contains 48 samples. The original MAGIC model was trained on over 16,000+ individual samples, but this sample set illustrates the program's functionality.
+We provide a small sample training set for evaluation and introduction to this project's code. This can be found in [training_data](sample_train/). The training set contains 48 samples. The original MAGIC model was trained on over 16,000+ individual samples, but this sample set illustrates the program's functionality.
 
 ### Training network
 Once the environment and training data are ready, you can directly change the directory in the [training_script](code/magic_train.py) and training the model by using the following command:
