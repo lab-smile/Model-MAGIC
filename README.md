@@ -47,7 +47,7 @@ You can specify learning rates, output save direction, number of training epochs
 ```
 python magic_train.py --dataset '../sample' --lrG 0.00005 --lrD 0.00005 --train_epoch 50 --save_root 'results' 
 ```
-Or you can also training the model by using the [dockerfile](docker/training) we provided. Please find the dockerfile tutorial [here](docker/)
+Or you can also training the model by using the [dockerfile](docker/train_docker) we provided. 
 
 ### Testing 
 We provide four [testing_images](sample_test/test_imgs) and a pre-trained model (Please find our pre-trained model by using this google drive link: https://drive.google.com/file/d/1V-Cc2cBUbp9RL09unxhjfNbgVL9K1h1L/view?usp=sharing) for testing process. Afther running the test script with our sample model, you will find a subfolder titled */test_results* under the same directory with the test code which concludes four test results images. You can compare your results with the expected [results](sample_test/test_imgs_expected_results) we provide.
@@ -60,6 +60,8 @@ python magic_test.py --dataset '../sample' --save_root 'results'
 
 The expected results of these four test images are shown below:
 ![](https://github.com/lab-smile/Model-MAGIC/blob/main/img/expected_results.png)
+
+We also provide [dockerfile](docker/test_docker) for testing the pre-trained model to obtain the expected test results. Please find the dockerfile tutorial [here](docker/).
 
 ## Citation
 
