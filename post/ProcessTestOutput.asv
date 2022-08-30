@@ -1,0 +1,17 @@
+% Script to convert output of magic_test.py to final format
+% Converting grayscale maps into colorized maps separated by type
+
+clc; clear; close all;
+
+% Change the following folder name to the directory containing the output
+% of magic_test.py
+sample_test_folder = fullfile("../sample_test/sample_test_test_imgs_output");
+
+% Load colormap
+load('Rapid_Colormap.mat');
+
+% Set and create save location
+sample_test_output_dir = fullfile("../sample_test/sample_test_output_processed");
+if ~exist(sample_test_output_dir,'dir'),mkdir(savepath);end
+% Postprocessing method - Median was used to achieve final results reported in paper
+method = 'median'; 
