@@ -59,7 +59,7 @@ python magic_test.py --dataset '../sample' --save_root 'results'
 ```
 
 The test script will produce grayscale CTP outputs as shown in the example below:
-![](https://github.com/lab-smile/Model-MAGIC/blob/main/img/expected_results_test_output.png)
+![](https://github.com/lab-smile/Model-MAGIC/blob/main/img/Slice_A_output_example.png)
 
 We provide a MATLAB script [ProcessTestOutput.m](post/ProcessTestOutput.m) to achieve the final colorized CT perfusion maps. We used MATLAB version R2021B to open and run this script. You can directly change the directory name stored in the ```sample_test_folder``` variable to be the directory containing the output from the [testing script](code/magic_test.py). 
 
