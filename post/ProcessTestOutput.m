@@ -32,10 +32,10 @@ for i = 1:length(images)
     cbf = rgb2gray(full_ctp(:,unit*2+1:unit*3,:));
     cbv = rgb2gray(full_ctp(:,unit*3+1:unit*4,:));
     
-    saveImageFinal(applyImageDenoising(mtt, method), c_map, imgname, fakesavepath, "MTT");
-    saveImageFinal(applyImageDenoising(ttp, method), c_map, imgname, fakesavepath, "TTP");
-    saveImageFinal(applyImageDenoising(cbf, method), c_map, imgname, fakesavepath, "CBF");
-    saveImageFinal(applyImageDenoising(cbv, method), c_map, imgname, fakesavepath, "CBV");
+    saveImageFinal(applyImageDenoising(mtt, method), c_map, imgname, sample_test_output_dir, "MTT");
+    saveImageFinal(applyImageDenoising(ttp, method), c_map, imgname, sample_test_output_dir, "TTP");
+    saveImageFinal(applyImageDenoising(cbf, method), c_map, imgname, sample_test_output_dir, "CBF");
+    saveImageFinal(applyImageDenoising(cbv, method), c_map, imgname, sample_test_output_dir, "CBV");
 end
 fprintf("All outputs saved to %s", sample_test_output_dir);
 
@@ -46,4 +46,11 @@ map_type_savepath = makeSubfolder(savepath,subfolder);
 savename = fullfile(map_type_savepath,imgname);
 imwrite(f.cdata,savename);
 close all;
+end
+
+function newfilepath = makeSubfolder(savepath,folder_name)
+newfilepath = fullfile(savepath,folder_name);
+if ~exist(newfilepath,'dir')
+    mkdir(newfilepath);
+end
 end
