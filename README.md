@@ -53,10 +53,17 @@ Or you can also training the model by using the [dockerfile](docker/train_docker
 We provide four [testing_images](sample_test/test_imgs) and a pre-trained model (Please find our pre-trained model by using this google drive link: https://drive.google.com/file/d/1V-Cc2cBUbp9RL09unxhjfNbgVL9K1h1L/view?usp=sharing) for testing process. Afther running the test script with our sample model, you will find a subfolder titled */test_results* under the same directory with the test code which concludes four test results images. You can compare your results with the expected [results](sample_test/test_imgs_expected_results) we provide.
 
 You need to determine the ```dataset``` and ```save_root``` arguments before testing progress. 
-You can directly change the directory in the [testing_script](code/magic_test.py) and testing the model by using the following command:
+You can directly change the directory in the [testing script](code/magic_test.py) and testing the model by using the following command:
 ```
 python magic_test.py --dataset '../sample' --save_root 'results' 
 ```
+
+The test script will produce grayscale CTP outputs as shown in the example below:
+![](https://github.com/lab-smile/Model-MAGIC/blob/main/img/expected_results_test_output.png)
+
+We provide a MATLAB script [ProcessTestOutput.m](post/ProcessTestOutput.m) to achieve the final colorized CT perfusion maps. We used MATLAB version R2021B to open and run this script. You can directly change the directory name stored in the ```sample_test_folder``` variable to be the directory containing the output from the [testing script](code/magic_test.py). 
+
+This script produces a new folder as determined by the variable ```sample_test_output_dir```. The default output is stored in the directory [sample_test/test_imgs_expected_results_processed](sample_test/test_imgs_expected_results_processed). This folder will contain subfolders for the produced CBF, CBV, MTT, and TTP synthetic perfusion maps, as shown below.
 
 The expected results of these four test images are shown below:
 ![](https://github.com/lab-smile/Model-MAGIC/blob/main/img/expected_results.png)
