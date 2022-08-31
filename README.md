@@ -68,7 +68,7 @@ This script produces a new folder as determined by the variable ```sample_test_o
 The expected results of these four test images are shown below:
 ![](https://github.com/lab-smile/Model-MAGIC/blob/main/img/expected_results.png)
 
-We also provide [dockerfile](docker/test_docker) for testing the pre-trained model to obtain the expected test results. Please find the dockerfile tutorial [here](docker/).
+We also provide [dockerfile](docker/test_docker) for testing the pre-trained model to obtain the expected test results. Please find the dockerfile tutorial [here](docker/Docker_Tutorial.md).
 
 ## Citation
 
